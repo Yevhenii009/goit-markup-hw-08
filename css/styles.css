@@ -37,6 +37,16 @@ ul {
     color: var(--accent-text-color);
 }
 
+/* Contacts */
+.contacts .contacts-link {
+    color: var(--primary-text-color);
+}
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
+    color: var(--accent-text-color);
+}
+
+
 /* Hero */
 .hero {
     color: var(--title-white-color);
@@ -63,6 +73,13 @@ ul {
     background-color: var(--accent-text-color);
 }
 
+/* Footer */
+.address .address-map {
+    color: var(--title-white-color);
+}
+.address .address-link {
+    color: rgba(255, 255, 255, 0.6);
+}
 
 
 /* первичній текст #757575 */
