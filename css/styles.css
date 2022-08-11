@@ -68,9 +68,19 @@ ul {
 }
 
 /* Button */
-.button-primary {
-    color: var(--title-white-color);
+.button {
     background-color: var(--accent-text-color);
+    color: var(--title-text-color);
+}
+
+.button.primary {
+    background-color: var(--accent-text-color);
+    color: var(--title-white-color);
+}
+
+.button.secondary {
+    background-color:var(--title-white-color);
+    color: var(--accent-text-color);
 }
 
 /* Footer */
