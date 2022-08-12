@@ -38,7 +38,7 @@ body {
     color: var(--hover-color);
 }
 
-.logo span {
+.navigation span {
     color: var(--title-black-color);
 }
 
