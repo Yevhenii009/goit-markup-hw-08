@@ -4,33 +4,60 @@
     --accent-text-color: #2196F3;
     --primary-bg-color: #F5F5F5;
     --title-white-color: #FFFFFF;
+    --button-text-color: #F5F4FA;
+    --secondary-bg-color: #2F303A;
+    --title-black-color: #000000;
+    --hover-color: #188CE8;
 }
 
 
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 
+/* Header */
+.navigation {
+    background-color: var(--title-white-color);
+}
+/* Logo */
 .logo {
     color: var(--accent-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
 }
 
 .logo:hover {
-    color: var(--title-text-color);
+    color: var(--hover-color);
 }
 
-ul {
+.logo span {
+    color: var(--title-black-color);
+}
+
+.list {
     list-style: none;
 }
 
 /* Site nav */
 .site-nav .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--accent-text-color);
+    color: var(--hover-color);
 }
 
 .site-nav .link-current {
@@ -38,64 +65,168 @@ ul {
 }
 
 /* Contacts */
-.contacts .contacts-link {
-    color: var(--primary-text-color);
+.contacts .contacts-link,
+.contacts-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
-.contacts .contacts-link:hover,
-.contacts .contacts-link:focus {
+
+.contacts .contacts-mail {
     color: var(--accent-text-color);
 }
 
+.contacts .contacts-link {
+    color: var(--primary-text-color);
+}
+
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus,
+.contacts .contacts-mail:hover,
+.contacts .contacts-mail:focus {
+    color: var(--hover-color);
+}
 
 /* Hero */
 .hero {
     color: var(--title-white-color);
+    background-color: var(--secondary-bg-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-/* Section */
-.section-title {
-    color: var(--title-text-color);
-}
-
-/* Features */
+/* Section and Features */
+.section-title,
 .features .title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* Employees*/
 .employees .employees-title {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.employees .employees-text{
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.bgcolor {
+    background-color: var(--button-text-color);
 }
 
 /* Button */
 .button {
     background-color: var(--accent-text-color);
     color: var(--title-text-color);
+    font-family: inherit;
+    cursor: pointer;
 }
 
 .button.primary {
     background-color: var(--accent-text-color);
     color: var(--title-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+
+.button.primary:hover,
+.button.primary:focus,
+.button.secondary:hover,
+.button.secondary:focus,
+.button.portfolio:hover,
+.button.portfolio:focus {
+    color: var(--hover-color);
 }
 
 .button.secondary {
-    background-color:var(--title-white-color);
-    color: var(--accent-text-color);
+    background-color:var(--button-text-color);
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Footer */
-.address .address-map {
+.info {
+    background-color: var(--secondary-bg-color);
+}
+
+.logo span-footer {
     color: var(--title-white-color);
 }
-.address .address-link {
-    color: rgba(255, 255, 255, 0.6);
+
+.address {
+    font-style: normal;
 }
 
+.address .address-map {
+    color: var(--title-white-color);
+    text-decoration: none;
+}
 
-/* первичній текст #757575 */
-/* вторичный текст #212121 */
-/* #FFFFFF
-/* акцент #2196F3
-/* футер rgba(255, 255, 255, 0.6); */
-/* вторичный цвет фона #F5F4FA; */
-/* цвет хедера #FFFFFF */
+.address .address-map:hover,
+.address .address-map:focus,
+.address .address-link:hover,
+.address .address-link:focus {
+    color: var(--hover-color);
+}
+
+.address .address-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+/* Portfolio */
+.list .portfolio {
+    text-decoration: none;
+}
+
+.portfolio .portfolio-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .portfolio-text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.button.portfolio {
+    color: var(--title-white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}

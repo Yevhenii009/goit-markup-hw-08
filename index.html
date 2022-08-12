@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="uk">
-<link>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--Шапка сайта-->
-    <header>
+    <header class="navigation">
       <nav>
         <a href="./index.html" class="logo">
-         WebStudio
+         Web<span>Studio</span>
         </a>
-        <ul class="site-nav">
+        <ul class="site-nav list">
          <li><a href="" class="link-current">Студія</a></li>
          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
          <li><a href="" class="link">Контакти</a></li>
         </ul>
       </nav>
-        <ul class="contacts">
-         <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+        <ul class="contacts list">
+         <li><a href="mailto:info@devstudio.com" class="contacts-mail">info@devstudio.com</a></li>
          <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
         </ul>
     </header>
@@ -32,8 +34,8 @@
       </section>
     <!--Наші особливості-->
     <section class="section">
-        <h2 class="section-title">Наші особливості</h2>
-        <ul class="features">
+        <h2 class="section-title visually-hidden">Наші особливості</h2>
+        <ul class="features list">
             <li>
                 <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -55,7 +57,7 @@
     <!--Чим ми займаємося-->
     <section class="section">
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul>
+        <ul class="list">
             <li>
                 <img src="./images/work.jpg" alt="Руки спеціаліста пишуть код" width="370" height="294"/>
             </li>
@@ -68,39 +70,39 @@
         </ul>
     </section>
     <!--Наша команда-->
-    <section class="section">
+    <section class="section bgcolor">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="employees">
+        <ul class="employees list">
             <li>
                 <img src="./images/employee.jpg" alt="Фото продукти дизайнера" width="270" height="260"/>
                 <h3 class="employees-title">Ігор Дем'яненко</h3>
-                <p>Product Designer</p>
+                <p class="employees-text">Product Designer</p>
             </li>
             <li>
                 <img src="./images/employee1.jpg" alt="Фото фронтенд розробника" width="270" height="260"/>
                 <h3 class="employees-title">Ольга Рєпіна</h3>
-                <p>Frontend Developer</p>
+                <p class="employees-text">Frontend Developer</p>
             </li>
             <li>
                 <img src="./images/employee2.jpg" alt="Фото маркетолога" width="270" height="260"/>
                 <h3 class="employees-title">Микола Тарасов</h3>
-                <p>Marketing</p>
+                <p class="employees-text">Marketing</p>
             </li>
             <li>
                 <img src="./images/employee3.jpg" alt="Фото дизайнера інтерфейсу" width="270" height="260"/>
                 <h3 class="employees-title">Михайло Єрмаков</h3>
-                <p>UI Designer</p>
+                <p class="employees-text">UI Designer</p>
             </li>
         </ul>
     </section>
     </main>
     <!--Футер-->
-    <footer>
+    <footer class="info">
         <a href="./index.html" class="logo">
-            WebStudio
+            Web<span-footer>Studio</span-footer>
         </a>
         <address>
-          <ul class="address">
+          <ul class="address list">
             <li>
                <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                target="_blank" rel="noopener noreferrer nofollow" class="address-map">м. Київ, пр-т Лесі Українки, 26</a>
