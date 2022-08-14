@@ -65,8 +65,7 @@ body {
 }
 
 /* Contacts */
-.contacts .contacts-link,
-.contacts-mail {
+.contacts .contacts-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -90,7 +89,7 @@ body {
 }
 
 /* Hero */
-.hero {
+.hero-title {
     color: var(--title-white-color);
     background-color: var(--secondary-bg-color);
     font-weight: 900;
@@ -102,13 +101,16 @@ body {
 }
 
 /* Section and Features */
-.section-title,
-.features .title {
+.title {
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 700;font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase;
+}
+
+.section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
 }
 
 .visually-hidden {
@@ -125,15 +127,13 @@ body {
 }
 
 /* Employees*/
-.employees .employees-title {
+.employees-title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
-.employees .employees-text{
-    color: var(--primary-text-color);
-    font-weight: 400;
+.employees-text{
     font-size: 16px;
     line-height: 1.19;
 }
@@ -161,10 +161,13 @@ body {
 .button.primary:hover,
 .button.primary:focus,
 .button.secondary:hover,
-.button.secondary:focus,
+.button.secondary:focus {
+    color: var(--hover-color);
+}
+
 .button.portfolio:hover,
 .button.portfolio:focus {
-    color: var(--hover-color);
+    background-color: var(--accent-text-color)
 }
 
 .button.secondary {
@@ -193,8 +196,6 @@ body {
     text-decoration: none;
 }
 
-.address .address-map:hover,
-.address .address-map:focus,
 .address .address-link:hover,
 .address .address-link:focus {
     color: var(--hover-color);
@@ -212,9 +213,8 @@ body {
 
 .portfolio .portfolio-title {
     color: var(--title-text-color);
-    font-weight: 700;
     font-size: 18px;
-    line-height: 2.0;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 
