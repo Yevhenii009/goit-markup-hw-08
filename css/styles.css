@@ -62,6 +62,7 @@ body {
 
 .site-nav .link-current {
     color: var(--accent-text-color);
+    text-decoration: none;
 }
 
 /* Contacts */
