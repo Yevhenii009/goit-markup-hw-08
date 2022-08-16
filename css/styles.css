@@ -66,7 +66,7 @@ body {
 }
 
 /* Contacts */
-.contacts .contacts-link {
+.contacts-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -74,18 +74,14 @@ body {
     text-decoration: none;
 }
 
-.contacts .contacts-mail {
-    color: var(--accent-text-color);
-}
-
-.contacts .contacts-link {
+.contacts-link {
     color: var(--primary-text-color);
 }
 
-.contacts .contacts-link:hover,
-.contacts .contacts-link:focus,
-.contacts .contacts-mail:hover,
-.contacts .contacts-mail:focus {
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-mail:hover,
+.contacts-mail:focus {
     color: var(--hover-color);
 }
 
@@ -192,34 +188,34 @@ body {
     font-style: normal;
 }
 
-.address .address-map {
+.address-map {
     color: var(--title-white-color);
     text-decoration: none;
 }
 
-.address .address-link:hover,
-.address .address-link:focus {
+.address-link:hover,
+.address-link:focus {
     color: var(--hover-color);
 }
 
-.address .address-link {
+.address-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
 /* Portfolio */
-.list .portfolio {
+.portfolio {
     text-decoration: none;
 }
 
-.portfolio .portfolio-title {
+.portfolio-title {
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.portfolio .portfolio-text {
+.portfolio-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
