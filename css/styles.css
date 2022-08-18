@@ -8,6 +8,7 @@
     --secondary-bg-color: #2F303A;
     --title-black-color: #000000;
     --hover-color: #188CE8;
+    --border-heder-colod: #ECECEC;
 }
 
 
@@ -20,10 +21,25 @@ body {
     letter-spacing: 0.03em;
 }
 
-.container {
+h1,
+h2,
+h3,
+p {
     margin: 0 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
     width: 1200px;
-    border: 1px solid var(--title-black-color);
+    border: 1px solid var(--border-heder-colod);
+    
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Header */
@@ -62,6 +78,14 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
+.site-nav {
+    display: flex;
+}
+.contacts {
+    display: flex;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--hover-color);
@@ -79,7 +103,13 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    margin-right: 50px;
 }
+
+.phone {
+    margin-right: 215px;
+}
+
 
 .contacts-link {
     color: var(--primary-text-color);
@@ -97,6 +127,7 @@ body {
 .hero-title {
     background-color: var(--secondary-bg-color);
     text-align: center;
+    margin-bottom: 94px;
 }
 
 .hero-text {
@@ -106,7 +137,6 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0 0;
     margin-bottom: 30px;
 }
 
@@ -114,18 +144,30 @@ body {
 /* Section and Features */
 .section .container {
     border: transparent;
+    
+}
+
+img {
+    display: block;
 }
 
 .title {
     color: var(--title-text-color);
     font-weight: 700;font-size: 14px;
     line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .section-title {
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
+    padding-bottom: 50px;
+}
+
+.section {
+    margin-bottom: 94px;
 }
 
 .visually-hidden {
@@ -155,6 +197,8 @@ body {
 .bgcolor {
     background-color: var(--button-text-color);
 }
+
+
 
 /* Button */
 .button {
@@ -201,7 +245,11 @@ body {
 /* Footer */
 .info {
     background-color: var(--secondary-bg-color);
+    padding-top: 60px;
 }
+
+
+
 
 .info span {
     color: var(--title-white-color);
