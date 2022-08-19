@@ -19,6 +19,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin: 0;
 }
 
 h1,
@@ -164,7 +165,11 @@ img {
     font-size: 36px;
     line-height: 1.17;
     padding-bottom: 50px;
+    text-align: center;
+
 }
+
+
 
 .section {
     margin-bottom: 94px;
@@ -183,12 +188,41 @@ img {
     margin: -1px;
 }
 
+.features {
+    display: flex;
+    gap: 30px;
+    flex-basis: calc(100% - 90px) / 4;
+}
+
+.items {
+    display: flex;
+    gap: 30px;
+    flex-basis: calc(100% - 60px) / 3;
+}
+
 /* Employees*/
+.employees {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    flex-basis: calc(100% - 90px) / 4;
+}
+
+
+.employees-card {
+    width: 270px;
+    height: 368px;
+    background: var(--title-white-color)
+    
+}
+
 .employees-title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .employees-text{
     font-size: 16px;
@@ -246,10 +280,13 @@ img {
 .info {
     background-color: var(--secondary-bg-color);
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-
-
+.info .logo {
+    margin-left: 215px;
+    margin-right: 1240px;
+}
 
 .info span {
     color: var(--title-white-color);
@@ -257,6 +294,11 @@ img {
 
 .address {
     font-style: normal;
+    margin-left: 215px;
+    margin-right: 1154px;
+    padding-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
 }
 
 .address-map {
@@ -284,12 +326,16 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    text-align:start;
 }
 
 .portfolio-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
+    text-align: start;
 }
 
 .button.portfolio {
@@ -298,4 +344,21 @@ img {
     font-size: 16px;
     line-height: 1.6;
     padding: 6px 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc(100% - 60px) / 3;
+}
+
+.portfolio-cards:not(:nth-last-child(3n)) {
+    margin-right: 30px;
 }
