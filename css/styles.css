@@ -416,8 +416,7 @@ img {
 }
 
 .portfolio-box {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
 }
 
 .portfolio-card {
