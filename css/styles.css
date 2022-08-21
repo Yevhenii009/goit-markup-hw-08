@@ -47,7 +47,7 @@ p {
     
 
 /* Header */
-.navigation {
+.header {
     background-color: var(--title-white-color);
     border-bottom: 1px solid var(--border-heder-colod);
 }
@@ -210,7 +210,6 @@ img {
     font-size: 36px;
     line-height: 1.17;
     margin-bottom: 50px;
-    
     text-align: center;
     
 
@@ -219,7 +218,7 @@ img {
 
 
 .section {
-    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .visually-hidden {
@@ -238,12 +237,12 @@ img {
 .features {
     display: flex;
     gap: 30px;
-    
-    /* padding-top: 94px; */
+    margin-bottom: 94px;
+
 }
 .feature-list {
     flex-basis: calc(100% - 90px) / 4;
-    margin-top: 94px;
+    
 }
  
 
@@ -251,6 +250,7 @@ img {
     display: flex;
     gap: 30px;
     flex-basis: calc(100% - 60px) / 3;
+    margin-bottom: 94px;
 }
 
 /* Employees*/
@@ -259,6 +259,7 @@ img {
     text-align: center;
     gap: 30px;
     flex-basis: calc(100% - 90px) / 4;
+    padding-bottom: 94px;
 }
 
 
