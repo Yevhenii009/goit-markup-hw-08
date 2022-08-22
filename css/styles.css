@@ -91,7 +91,8 @@ html {
 }
 
 /* Site nav */
-.site-nav .link {
+.site-nav .link,
+.link-current {
     color: var(--title-text-color);
     
     font-weight: 500;
@@ -100,9 +101,11 @@ html {
     letter-spacing: 0.02em;
     text-decoration: none;
     
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+
+
 
 
 .link {
@@ -143,10 +146,8 @@ html {
 
 .site-nav .link-current {
     color: var(--accent-text-color);
-    text-decoration: none;
-    display: block;
-    padding-top: 30px;
     
+    display: flex;
 }
 
 
