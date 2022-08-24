@@ -10,6 +10,7 @@
     --hover-color: #188CE8;
     --border-heder-colod: #ECECEC;
     --border-cfrd-color: #EEEEEE;
+    --hero-bgcolor: #C4C4C4;
 }
 
 
@@ -182,7 +183,12 @@ html {
 /* Hero */
 
 .hero {
-    background-color: var(--secondary-bg-color);
+    max-width: 1600px;
+    height: 600px;
+    background-color: var(--hero-bgcolor);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/hero_img.jpg);
+    background-position: center;
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
@@ -250,8 +256,35 @@ img {
     display: flex;
     gap: 30px;
     padding-left: 0;
-
 }
+
+.feature-list::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background: var(--button-text-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/icon_antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/icon_clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/icon_diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/icon_astronaut.svg);
+}
+
 .feature-list {
     flex-basis: calc(100% - 90px) / 4;
     width: 270px;
