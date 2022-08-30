@@ -375,14 +375,11 @@ img {
     fill: var(--clients-border-color);
 }
 
-.border-clients:hover {
+.border-clients:hover,
+.border-clients:focus {
     fill: var(--accent-text-color);
     border-color: var(--accent-text-color);
 }
-
-/* fill="#2196f3" style="fill:var(--color3, #2196f3)" */
-
-
 
 /* Button */
 .button {
