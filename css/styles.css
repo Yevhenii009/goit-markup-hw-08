@@ -174,22 +174,17 @@ html {
 
 .contact-icon {
     margin-right: 10px;
+    fill: currentColor;
 }
 
-.contacts-link .contact-icon:hover,
-.contacts-link .contact-icon:focus {
-    fill: var(--accent-text-color);
-}
 
 .contacts-link {
     color: var(--primary-text-color);
 }
 
 .contacts-link:hover,
-.contacts-link:focus,
-.contacts-mail:hover,
-.contacts-mail:focus {
-    color: var(--hover-color);
+.contacts-link:focus {
+    color: var(--accent-text-color);
 }
 
 
@@ -198,10 +193,13 @@ html {
 .hero {
     max-width: 1600px;
     height: 600px;
+    margin: 0 auto;
     background-color: var(--hero-bgcolor);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     url(../images/hero_img.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
@@ -379,7 +377,17 @@ img {
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+    fill: var(--clients-border-color);
 }
+
+.border-clients:hover {
+    fill: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+}
+
+/* fill="#2196f3" style="fill:var(--color3, #2196f3)" */
+
+
 
 /* Button */
 .button {
