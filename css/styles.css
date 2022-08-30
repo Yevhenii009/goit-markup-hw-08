@@ -243,8 +243,6 @@ img {
     line-height: 1.17;
     margin-bottom: 50px;
     text-align: center;
-    
-
 }
 
 .features-section {
@@ -277,8 +275,7 @@ img {
     height: 120px;
     background: var(--button-text-color);
     border-radius: 4px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px; 
 }
 
 
@@ -287,7 +284,6 @@ img {
     gap: 30px;
     flex-basis: calc(100% - 60px) / 3;
     padding-left: 0;
-    
 }
 
 /* Employees*/
@@ -297,7 +293,6 @@ img {
     gap: 30px;
     flex-basis: calc(100% - 90px) / 4;
     padding-left: 0;
-    
 }
 
 .employees-card {
@@ -455,14 +450,10 @@ img {
 .address {
     font-style: normal;
     padding-left: 0;
-    
-    
 }
 
-
 .address-list {
-    margin-top: 20px;
-    
+    margin-top: 20px;  
 }
  
 .address-map {
@@ -528,7 +519,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-white-color);
-
 }
 
 
@@ -583,7 +573,6 @@ img {
     flex-basis: calc(100% - 60px) / 3;
     justify-content: center;
     padding-left: 0;
-    
 }
 
 .portfolio-box {
