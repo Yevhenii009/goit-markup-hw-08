@@ -12,6 +12,8 @@
     --border-cfrd-color: #EEEEEE;
     --hero-bgcolor: #C4C4C4;
     --clients-border-color: #AFB1B8;
+
+    --transition-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -80,7 +82,7 @@ html {
     line-height: 1.19;
     text-decoration: none;
     align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-func)
 }
 
 .logo:hover {
@@ -108,7 +110,7 @@ html {
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-func)
     
 }
 
@@ -182,7 +184,7 @@ html {
     letter-spacing: 0.02em;
     text-decoration: none;
     align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-func);
 }
 
 .contact-icon {
@@ -256,6 +258,7 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 40px;
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
@@ -277,10 +280,105 @@ html {
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
-    
+    transition: fill var(--transition-func);
 }
 
+.modal-close:focus {
+    fill: var(--accent-text-color);
+}
 
+.links-icon {
+    transition: fill var(--transition-func);
+}
+
+.links-icon:hover {
+    fill: var(--accent-text-color);
+}
+
+.modal-field-message {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
+    resize: none;
+    transition: border-color var(--transition-func);
+}
+
+.modal-field-message:focus {
+    outline: none;
+    border-color: var(--accent-text-color);
+}
+
+.modal-field-message::placeholder {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 0.8;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+/* Modal Form */
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    margin-bottom: 12px;
+    text-align: center;
+    
+    color: var(--title-text-color);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-inpute {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color var(--transition-func);
+}
+
+.modal-form-desc {
+    display: block;
+    text-align: start;
+    font-size: 12px;
+    line-height: 0.8;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.modal-field {
+    margin-bottom: 10px;
+}
+
+.modal-form-wrapper{
+    position: relative;
+}
+
+.modal-icon {
+    
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill var(--transition-func);
+}
+
+.modal-inpute:focus + .modal-icon {
+    fill: var(--accent-text-color);
+}
+
+.modal-inpute:focus {
+    border-color: var(--accent-text-color);
+    outline: none;
+}
 
 /* Section and Features */
 
@@ -421,7 +519,7 @@ img {
     height: 44px;
     background-color: var(--title-white-color);
     border-radius: 50px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-func);
 }
 
 .social-link:hover,
@@ -434,7 +532,7 @@ img {
     width: 20px;
     height: 20px;
     fill: var(--clients-border-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--transition-func);
 }
 
 .social-link:hover .insta,
@@ -459,7 +557,7 @@ img {
     align-items: center;
     justify-content: center;
     fill: var(--clients-border-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--transition-func), border-color var(--transition-func);
 }
 
 .border-clients:hover,
@@ -487,7 +585,7 @@ img {
     line-height: 1.9;
     letter-spacing: 0.06em;
     padding: 10px 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-func), background-color var(--transition-func);
 }
 
 .button.primary:hover,
@@ -513,7 +611,7 @@ img {
     font-size: 16px;
     line-height: 1.6;
     padding: 6px 22px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--transition-func), color var(--transition-func), background-color var(--transition-func);
 }
 
 /* Footer */
@@ -556,7 +654,7 @@ img {
 .address-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-func);
 }
 
 .address-text:not(:last-child) {
@@ -571,7 +669,7 @@ img {
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-func);
 }
 
 .join-links:hover,
@@ -614,7 +712,7 @@ img {
 .portfolio {
     text-decoration: none;
     display: inline-block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--transition-func);
 }
 
 .portfolio-title {
@@ -687,7 +785,7 @@ img {
     align-items: center;
     overflow-y: auto;
     transform: translateY(101%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition-func);
 
     color: var(--title-white-color);
     background: rgba(33, 150, 243, 0.9);
