@@ -800,6 +800,7 @@ img {
     height: 50px;
     margin-right: 12px;
     padding-left: 12px;
+    color: var(--title-white-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background: none;
