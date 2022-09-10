@@ -380,6 +380,76 @@ html {
     outline: none;
 }
 
+.modal-form-chek {
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--title-text-color);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: box-shadow var(--transition-func);
+    margin-right: 7px;
+}
+
+.modal-form-icon {
+    display: none;
+    fill: var(--title-white-color);
+}
+
+.modal-chek:checked + .modal-form-chek {
+    background-color: var(--accent-text-color);
+}
+
+.modal-chek:checked + .modal-form-chek .modal-form-icon {
+    display: block;
+}
+
+.modal-chek:checked:focus + .modal-form-chek {
+    background-color: var(--accent-text-color);
+    border: none;
+}
+
+.modal-field-chek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.modal-chek {
+    position: absolute;
+    appearance: none;
+    
+}
+
+.modal-button {
+    width: 200px;
+    height: 50px;
+    color: var(--title-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    letter-spacing: 0.06em;
+    background: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color var(--transition-func);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--hover-color);
+}
+
+.modal-polity {
+    color: var(--accent-text-color)
+}
+
+
 /* Section and Features */
 
 img {
