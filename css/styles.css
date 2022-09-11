@@ -407,7 +407,7 @@ html {
 /* .modal-chek:checked:focus + .modal-form-chek {    
     background-color: var(--accent-text-color);
     border: none;
-} */
+}   */
 
 .modal-chek:focus + .modal-form-chek {
     border-color: var(--accent-text-color);
@@ -444,11 +444,13 @@ html {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color var(--transition-func);
+    
 }
 
 .modal-button:hover,
 .modal-button:focus {
     background-color: var(--hover-color);
+    
 }
 
 .modal-polity {
