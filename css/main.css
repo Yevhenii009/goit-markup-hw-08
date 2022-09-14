@@ -523,6 +523,95 @@ img {
   margin-left: 10px;
 }
 
+.portfolio {
+  text-decoration: none;
+  display: inline-block;
+  transition: box-shadow var(--transition-func);
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  text-align: start;
+}
+
+.portfolio-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: start;
+}
+
+.button.portfolio {
+  color: var(--title-white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 6px 25px;
+}
+
+.portfolio:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-left: 0;
+  gap: 8px;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc(100% - 60px)/3;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.portfolio-box {
+  padding: 20px 24px;
+}
+
+.portfolio-card {
+  border: 1px solid var(--border-cfrd-color);
+  width: 370px;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  padding-left: 24px;
+  align-items: center;
+  overflow-y: auto;
+  transform: translateY(101%);
+  transition: transform var(--transition-func);
+  color: var(--title-white-color);
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.team-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio:hover .overlay,
+.portfolio:focus .overlay {
+  transform: translateY(0);
+}
+
 .header-container {
   display: flex;
   align-items: center;
