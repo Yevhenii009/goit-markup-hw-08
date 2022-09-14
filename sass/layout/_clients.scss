@@ -14,10 +14,10 @@
     justify-content: center;
     fill: var(--clients-border-color);
     transition: fill var(--transition-func), border-color var(--transition-func);
-}
 
-.border-clients:hover,
-.border-clients:focus {
-    fill: var(--accent-text-color);
-    border-color: var(--accent-text-color);
+        &:hover,
+        &:focus {
+            fill: var(--accent-text-color);
+            border-color: var(--accent-text-color);
+        }
 }

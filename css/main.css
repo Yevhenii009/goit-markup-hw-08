@@ -502,8 +502,11 @@ img {
   display: inline-block;
   transition: box-shadow var(--transition-func);
 }
-.portfolio:hover {
+.portfolio:hover, .portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio:hover .overlay, .portfolio:focus .overlay {
+  transform: translateY(0);
 }
 
 .portfolio-title {
@@ -528,6 +531,10 @@ img {
   font-size: 16px;
   line-height: 1.6;
   padding: 6px 25px;
+}
+.button.portfolio:hover, .button.portfolio:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--accent-text-color);
 }
 
 .buttons {
@@ -580,17 +587,6 @@ img {
   overflow: hidden;
 }
 
-.portfolio:hover .overlay,
-.portfolio:focus .overlay {
-  transform: translateY(0);
-}
-
-.button.portfolio:hover,
-.button.portfolio:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: var(--accent-text-color);
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -633,9 +629,15 @@ img {
   margin-left: 93px;
   padding-left: 0;
 }
-
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+.site-nav .link:hover, .site-nav .link:focus {
+  color: var(--hover-color);
+}
+.site-nav .link-current {
+  color: var(--accent-text-color);
+  display: flex;
 }
 
 .main-nav {
@@ -648,19 +650,8 @@ img {
   padding-left: 0;
   margin-left: auto;
 }
-
 .contacts .item:not(:last-child) {
   margin-right: 50px;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--hover-color);
-}
-
-.site-nav .link-current {
-  color: var(--accent-text-color);
-  display: flex;
 }
 
 .contacts-link {
@@ -673,20 +664,15 @@ img {
   text-decoration: none;
   align-items: center;
   transition: color var(--transition-func);
+  color: var(--primary-text-color);
+}
+.contacts-link:hover, .contacts-link:focus {
+  color: var(--accent-text-color);
 }
 
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contacts-link {
-  color: var(--primary-text-color);
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-text-color);
 }
 
 .hero {
@@ -798,9 +784,7 @@ img {
   fill: var(--clients-border-color);
   transition: fill var(--transition-func), border-color var(--transition-func);
 }
-
-.border-clients:hover,
-.border-clients:focus {
+.border-clients:hover, .border-clients:focus {
   fill: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
@@ -857,10 +841,11 @@ img {
   border-radius: 50px;
   transition: background-color var(--transition-func);
 }
-
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--accent-text-color);
+}
+.social-link:hover .insta, .social-link:focus .insta {
+  fill: var(--title-white-color);
 }
 
 .insta {
@@ -869,9 +854,4 @@ img {
   height: 20px;
   fill: var(--clients-border-color);
   transition: fill var(--transition-func);
-}
-
-.social-link:hover .insta,
-.social-link:focus .insta {
-  fill: var(--title-white-color);
 }/*# sourceMappingURL=main.css.map */

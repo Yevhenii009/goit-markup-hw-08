@@ -29,10 +29,20 @@
     display: flex;
     margin-left: 93px;
     padding-left: 0;
-}
 
-.site-nav .item:not(:last-child) {
-    margin-right: 50px;
+        & .item:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        & .link:hover,
+        & .link:focus {
+            color: var(--hover-color);
+        }
+
+        & .link-current {
+            color: var(--accent-text-color);
+            display: flex;
+        }
 }
 
 .main-nav {
@@ -44,18 +54,8 @@
     display: flex;
     padding-left: 0;
     margin-left: auto;
-}
 
-.contacts .item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--hover-color);
-}
-
-.site-nav .link-current {
-    color: var(--accent-text-color);
-    display: flex;
+        & .item:not(:last-child) {
+            margin-right: 50px;
+        }
 }

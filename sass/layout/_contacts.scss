@@ -8,19 +8,15 @@
     text-decoration: none;
     align-items: center;
     transition: color var(--transition-func);
+    color: var(--primary-text-color);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
 }
 
 .contact-icon {
     margin-right: 10px;
     fill: currentColor;
-}
-
-
-.contacts-link {
-    color: var(--primary-text-color);
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-    color: var(--accent-text-color);
 }
