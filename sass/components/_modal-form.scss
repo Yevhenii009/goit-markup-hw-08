@@ -1,9 +1,9 @@
 .links-icon {
     transition: fill var(--transition-func);
-}
 
-.links-icon:hover {
-    fill: var(--accent-text-color);
+        &:hover {
+            fill: var(--accent-text-color);
+        }
 }
 
 .modal-field-message {
@@ -16,19 +16,19 @@
     padding-left: 16px;
     resize: none;
     transition: border-color var(--transition-func);
-}
 
-.modal-field-message:focus {
-    outline: none;
-    border-color: var(--accent-text-color);
-}
+        &:focus {
+            outline: none;
+            border-color: var(--accent-text-color);
+        }
 
-.modal-field-message::placeholder {
-    font-family: Roboto, sans-serif;
-    font-size: 12px;
-    line-height: 0.8;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+        &::placeholder {
+            font-family: Roboto, sans-serif;
+            font-size: 12px;
+            line-height: 0.8;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
 .modal-title {
@@ -52,6 +52,15 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-func);
+
+        &:focus {
+            border-color: var(--accent-text-color);
+            outline: none;
+        }
+
+        &:focus+.modal-icon {
+            fill: var(--accent-text-color);
+        }
 }
 
 .modal-form-desc {
@@ -79,15 +88,6 @@
     transition: fill var(--transition-func);
 }
 
-.modal-inpute:focus+.modal-icon {
-    fill: var(--accent-text-color);
-}
-
-.modal-inpute:focus {
-    border-color: var(--accent-text-color);
-    outline: none;
-}
-
 .modal-form-chek {
     width: 16px;
     height: 15px;
@@ -103,18 +103,6 @@
     fill: var(--title-white-color);
 }
 
-.modal-chek:checked+.modal-form-chek {
-    background-color: var(--accent-text-color);
-}
-
-.modal-chek:checked+.modal-form-chek .modal-form-icon {
-    display: block;
-}
-
-.modal-chek:focus+.modal-form-chek {
-    border-color: var(--accent-text-color);
-}
-
 .modal-field-chek {
     display: flex;
     align-items: center;
@@ -125,6 +113,18 @@
 .modal-chek {
     position: absolute;
     appearance: none;
+
+        &:focus+.modal-form-chek {
+            border-color: var(--accent-text-color);
+        }
+
+        &:checked+.modal-form-chek {
+            background-color: var(--accent-text-color);
+        }
+
+        &:checked+.modal-form-chek .modal-form-icon {
+            display: block;
+        }
 }
 
 .modal-button {
@@ -144,11 +144,11 @@
     cursor: pointer;
     border-radius: 4px;
     transition: background-color var(--transition-func);
-}
 
-.modal-button:hover,
-.modal-button:focus {
-    background-color: var(--hover-color);
+        &:hover,
+        &:focus {
+            background-color: var(--hover-color);
+        }
 }
 
 .modal-polity {

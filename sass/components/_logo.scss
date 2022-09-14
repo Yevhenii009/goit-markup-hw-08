@@ -6,12 +6,13 @@
     line-height: 1.19;
     text-decoration: none;
     align-items: center;
-    transition: color var(--transition-func)
+    transition: color var(--transition-func);
+
+       &:hover {
+           color: var(--hover-color);
+    }
 }
 
-.logo:hover {
-    color: var(--hover-color);
-}
 
 .logo span {
     color: var(--title-black-color);

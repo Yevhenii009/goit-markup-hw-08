@@ -37,6 +37,11 @@
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition: color var(--transition-func);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
 }
 
 .address-text:not(:last-child) {

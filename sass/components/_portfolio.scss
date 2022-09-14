@@ -2,6 +2,12 @@
     text-decoration: none;
     display: inline-block;
     transition: box-shadow var(--transition-func);
+
+        &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
 .portfolio-title {
@@ -26,12 +32,6 @@
     font-size: 16px;
     line-height: 1.6;
     padding: 6px 25px;
-}
-
-.portfolio:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .buttons {
@@ -88,4 +88,10 @@
 .portfolio:hover .overlay,
 .portfolio:focus .overlay {
     transform: translateY(0);
+}
+
+.button.portfolio:hover,
+.button.portfolio:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: var(--accent-text-color)
 }

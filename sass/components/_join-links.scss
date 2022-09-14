@@ -7,11 +7,11 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     transition: background-color var(--transition-func);
-}
 
-.join-links:hover,
-.join-links:focus {
-    background-color: var(--accent-text-color);
+       &:hover,
+       &:focus {
+            background-color: var(--accent-text-color);
+    }
 }
 
 .join-footer {
