@@ -1,0 +1,23 @@
+.clients {
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+}
+
+.border-clients {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--clients-border-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--clients-border-color);
+    transition: fill var(--transition-func), border-color var(--transition-func);
+}
+
+.border-clients:hover,
+.border-clients:focus {
+    fill: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+}

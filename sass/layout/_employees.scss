@@ -1,0 +1,70 @@
+.employees {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    flex-basis: calc(100% - 90px) / 4;
+    padding-left: 0;
+}
+
+.employees-card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    background: var(--title-white-color)
+}
+
+.employees-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.employees-text {
+    font-size: 16px;
+    line-height: 1.19;
+    padding-bottom: 30px;
+}
+
+.bgcolor {
+    background-color: var(--button-text-color);
+}
+
+.links {
+    display: flex;
+    padding-left: 0;
+    padding-bottom: 30px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--title-white-color);
+    border-radius: 50px;
+    transition: background-color var(--transition-func);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-text-color);
+}
+
+.insta {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    fill: var(--clients-border-color);
+    transition: fill var(--transition-func);
+}
+
+.social-link:hover .insta,
+.social-link:focus .insta {
+    fill: var(--title-white-color)
+}

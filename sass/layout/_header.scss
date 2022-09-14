@@ -1,0 +1,9 @@
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: var(--title-white-color);
+    border-bottom: 1px solid var(--border-heder-colod);
+}
