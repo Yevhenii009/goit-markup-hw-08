@@ -13,7 +13,7 @@
     padding-top: 200px;
 }
 
-.hero-text {
+.hero__text {
     color: var(--title-white-color);
     @include font (900, 44px, 1.36, 0.06em);
     text-transform: uppercase;

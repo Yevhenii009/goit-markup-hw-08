@@ -1,4 +1,4 @@
-.modal {
+.backdrop__modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,7 +11,7 @@
     border-radius: 4px;
 }
 
-.modal-close {
+.backdrop__modal-close {
     position: absolute;
     @extend %align;
     top: 8px;
@@ -24,7 +24,8 @@
     background-color: transparent;
     transition: fill var(--transition-func);
 
-        &:focus {
+        &:focus,
+        &:hover {
             fill: var(--accent-text-color);
         }
 }

@@ -1,5 +1,5 @@
 .site-nav .link,
-.link-current {
+.site-nav_current {
     color: var(--title-text-color);
     @include font (500, 14px, 1.14, 0.02em);
     text-decoration: none;
@@ -8,7 +8,7 @@
     transition: color var(--transition-func)
 }
 
-.link-current::after {
+.site-nav_current::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -18,7 +18,7 @@
     background-color: var(--accent-text-color)
 }
 
-.item {
+.site-nav__item {
     position: relative;
 }
 
@@ -27,7 +27,7 @@
     margin-left: 93px;
     padding-left: 0;
 
-        & .item:not(:last-child) {
+        & .site-nav__item:not(:last-child) {
             margin-right: 50px;
         }
 
@@ -36,7 +36,7 @@
             color: var(--hover-color);
         }
 
-        & .link-current {
+        & .site-nav_current {
             color: var(--accent-text-color);
             display: flex;
         }
@@ -52,7 +52,7 @@
     padding-left: 0;
     margin-left: auto;
 
-        & .item:not(:last-child) {
+        & .contacts__item:not(:last-child) {
             margin-right: 50px;
         }
 }

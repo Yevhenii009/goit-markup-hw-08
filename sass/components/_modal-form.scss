@@ -1,4 +1,4 @@
-.links-icon {
+.features-section__icon{
     transition: fill var(--transition-func);
 
         &:hover {
@@ -6,7 +6,7 @@
         }
 }
 
-.modal-field-message {
+.modal-form__message {
     display: block;
     width: 100%;
     height: 120px;
@@ -32,6 +32,7 @@
 .modal-title {
     @include font (700, 20px, 1.15, 0.03em);
     text-align: center;
+    margin-bottom: 12px;
     color: var(--title-text-color);
 }
 
@@ -40,7 +41,7 @@
     flex-direction: column;
 }
 
-.modal-inpute {
+.modal-form__inpute {
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -54,34 +55,34 @@
         }
 }
 
-.modal-form-desc {
+.modal-form__desc {
     display: block;
     text-align: start;
     @include font (400, 12px, 1.16, 0.01em);
     margin-bottom: 4px;
 }
 
-.modal-field {
+.modal-form__field {
     margin-bottom: 10px;
 }
 
-.modal-form-wrapper {
+.modal-form__wrapper {
     position: relative;
 }
 
-.modal-icon {
+.modal-form__icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
     transition: fill var(--transition-func);
 
-    .modal-inpute:focus+& {
+    .modal-form__inpute:focus+& {
             fill: var(--accent-text-color);
         }
 }
 
-.modal-form-chek {
+.modal-form__chek-icon {
     width: 16px;
     height: 15px;
     border: 2px solid var(--title-text-color);
@@ -90,30 +91,30 @@
     transition: box-shadow var(--transition-func), border-color var(--transition-func);
     margin-right: 7px;
 
-        .modal-chek:focus+& {
+        .modal-form__actively:focus+& {
             border-color: var(--accent-text-color);
         }
     
-        .modal-chek:checked+& {
+        .modal-form__actively:checked+& {
             background-color: var(--accent-text-color);
         }
 }
 
-.modal-chek:checked+.modal-form-chek .modal-form-icon {
+.modal-form__actively:checked + .modal-form__chek-icon .modal-form__visible{
     display: block;
 }
 
-.modal-form-icon {
+.modal-form__visible {
     display: none;
     fill: var(--title-white-color);
 }
 
-.modal-field-chek {
+.modal-form__chek {
     @extend %align;
     margin-bottom: 30px;
 }
 
-.modal-chek {
+.modal-form__actively {
     position: absolute;
     appearance: none;    
 }
@@ -139,7 +140,7 @@
         }
 }
 
-.modal-polity {
+.modal-form__polity {
     color: var(--accent-text-color)
 }
 

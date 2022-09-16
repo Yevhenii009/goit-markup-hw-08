@@ -1,4 +1,4 @@
-.info {
+.footer {
     background-color: var(--secondary-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -23,17 +23,17 @@
     margin-top: 20px;
 }
 
-.address-map {
+.address__map {
     color: var(--title-white-color);
     text-decoration: none;
 }
 
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
     color: var(--hover-color);
 }
 
-.address-link {
+.address__link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition: color var(--transition-func);
@@ -44,6 +44,6 @@
     }
 }
 
-.address-text:not(:last-child) {
+.address__text:not(:last-child) {
     margin-bottom: 9px;
 }

@@ -1,12 +1,12 @@
-.title {
+.features-section__text {
     color: var(--title-text-color);
     @include font (700, 14px, 1.14, 0.03em);
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.section-title,
-.clients-title {
+.features-section__title,
+.features-section__title {
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
@@ -14,7 +14,7 @@
     text-align: center;
 }
 
-.item-text {
+.specialization__text {
     position: absolute;
     @extend %align;
     bottom: 0;
@@ -26,7 +26,7 @@
     background: rgba(47, 48, 58, 0.8);
 }
 
-.item-box {
+.specialization__box {
     position: relative;
 }
 
@@ -34,13 +34,13 @@
     padding-bottom: 0;
 }
 
-.features {
+.features-section__lists {
     display: flex;
     gap: 30px;
     padding-left: 0;
 }
 
-.icon-block {
+.features-section__block {
     @extend %align;
     height: 120px;
     background: var(--button-text-color);
@@ -48,7 +48,7 @@
     margin-bottom: 30px;
 }
 
-.items {
+.specialization {
     display: flex;
     gap: 30px;
     flex-basis: calc(100% - 60px) / 3;
