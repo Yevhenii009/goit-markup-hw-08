@@ -15,16 +15,13 @@
 
 .employees-title {
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font (500, 16px, 1.19, 0.03em);
     padding-top: 30px;
     margin-bottom: 10px;
 }
 
 .employees-text {
-    font-size: 16px;
-    line-height: 1.19;
+    @include font (400, 16px, 1.19, 0.03em);
     padding-bottom: 30px;
 }
 

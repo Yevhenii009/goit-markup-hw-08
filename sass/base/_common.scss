@@ -2,9 +2,7 @@ body {
     background-color: var(--title-white-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include font (400, 14px, 1.7, 0.03em);
     margin: 0;
 }
 

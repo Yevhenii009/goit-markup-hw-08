@@ -38,6 +38,7 @@ body {
   background-color: var(--title-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -95,6 +96,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   text-decoration: none;
   align-items: center;
   transition: color var(--transition-func);
@@ -150,8 +152,9 @@ img {
 }
 .modal-field-message::placeholder {
   font-family: Roboto, sans-serif;
+  font-weight: 400;
   font-size: 12px;
-  line-height: 0.8;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -160,7 +163,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  margin-bottom: 12px;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
 }
@@ -186,6 +189,7 @@ img {
 .modal-form-desc {
   display: block;
   text-align: start;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -252,10 +256,10 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
   align-self: center;
-  letter-spacing: 0.06em;
   background: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -334,6 +338,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  letter-spacing: 0.03em;
   padding: 6px 22px;
   transition: box-shadow var(--transition-func), color var(--transition-func), background-color var(--transition-func);
 }
@@ -422,7 +427,7 @@ img {
 .join-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 0.9;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-white-color);
@@ -433,7 +438,7 @@ img {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 0.9;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-white-color);
@@ -476,8 +481,8 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--title-white-color);
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -503,6 +508,7 @@ img {
 
 .portfolio-title {
   color: var(--title-text-color);
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -512,8 +518,10 @@ img {
 
 .portfolio-text {
   color: var(--primary-text-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
   text-align: start;
 }
 
@@ -522,6 +530,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  letter-spacing: 0.03em;
   padding: 6px 25px;
 }
 .button.portfolio:hover, .button.portfolio:focus {
@@ -565,6 +574,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
+  letter-spacing: 0.03em;
   padding-left: 24px;
   align-items: center;
   overflow-y: auto;
@@ -701,6 +711,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -722,6 +733,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-white-color);
   background: rgba(47, 48, 58, 0.8);
@@ -794,13 +806,16 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   padding-top: 30px;
   margin-bottom: 10px;
 }
 
 .employees-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   padding-bottom: 30px;
 }
 

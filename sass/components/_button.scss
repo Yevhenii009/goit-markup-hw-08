@@ -10,10 +10,7 @@
 .button.primary {
     background-color: var(--accent-text-color);
     color: var(--title-white-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+    @include font (700, 16px, 1.9, 0.06em);
     padding: 10px 32px;
     transition: color var(--transition-func), background-color var(--transition-func);
 
@@ -27,9 +24,7 @@
 .button.secondary {
     background-color: var(--button-text-color);
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+    @include font (500, 16px, 1.6, 0.03em);
     padding: 6px 22px;
     transition: box-shadow var(--transition-func), color var(--transition-func), background-color var(--transition-func);
         &:hover,

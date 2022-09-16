@@ -9,31 +9,24 @@
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
         }
-
-        
 }
 
 .portfolio-title {
     color: var(--title-text-color);
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font (700, 18px, 2, 0.06em);
     margin-bottom: 4px;
     text-align: start;
 }
 
 .portfolio-text {
     color: var(--primary-text-color);
-    font-size: 16px;
-    line-height: 1.9;
+    @include font (400, 16px, 1.9, 0.03em);
     text-align: start;
 }
 
 .button.portfolio {
     color: var(--title-white-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+    @include font (500, 16px, 1.6, 0.03em);
     padding: 6px 25px;
 
         &:hover,
@@ -76,9 +69,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
+    @include font (400, 18px, 1.6, 0.03em);
     padding-left: 24px;
     align-items: center;
     overflow-y: auto;
