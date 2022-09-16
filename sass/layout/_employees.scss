@@ -53,12 +53,7 @@
         &:hover,
         &:focus {
             background-color: var(--accent-text-color);
-        }
-
-        &:hover .insta,
-        &:focus .insta {
-            fill: var(--title-white-color);
-        }
+        } 
 }
 
 .insta {
@@ -67,4 +62,9 @@
     height: 20px;
     fill: var(--clients-border-color);
     transition: fill var(--transition-func);
+
+        .social-link:hover &,
+        .social-link:focus & {
+            fill: var(--title-white-color);
+        }
 }
