@@ -5,13 +5,11 @@
 }
 
 .border-clients {
-    display: flex;
+    @extend %align;
     width: 170px;
     height: 92px;
     border: 1px solid var(--clients-border-color);
     border-radius: 4px;
-    align-items: center;
-    justify-content: center;
     fill: var(--clients-border-color);
     transition: fill var(--transition-func), border-color var(--transition-func);
 

@@ -15,6 +15,12 @@
   --transition-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-link, .border-clients, .icon-block, .item-text, .mailbox-button, .join-links, .modal-close, .modal-field-chek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -176,9 +182,6 @@ img {
   border-color: var(--accent-text-color);
   outline: none;
 }
-.modal-inpute:focus + .modal-icon {
-  fill: var(--accent-text-color);
-}
 
 .modal-form-desc {
   display: block;
@@ -204,6 +207,9 @@ img {
   transform: translateY(-50%);
   transition: fill var(--transition-func);
 }
+.modal-inpute:focus + .modal-icon {
+  fill: var(--accent-text-color);
+}
 
 .modal-form-chek {
   width: 16px;
@@ -214,6 +220,16 @@ img {
   transition: box-shadow var(--transition-func), border-color var(--transition-func);
   margin-right: 7px;
 }
+.modal-chek:focus + .modal-form-chek {
+  border-color: var(--accent-text-color);
+}
+.modal-chek:checked + .modal-form-chek {
+  background-color: var(--accent-text-color);
+}
+
+.modal-chek:checked + .modal-form-chek .modal-form-icon {
+  display: block;
+}
 
 .modal-form-icon {
   display: none;
@@ -221,24 +237,12 @@ img {
 }
 
 .modal-field-chek {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
 }
 
 .modal-chek {
   position: absolute;
   appearance: none;
-}
-.modal-chek:focus + .modal-form-chek {
-  border-color: var(--accent-text-color);
-}
-.modal-chek:checked + .modal-form-chek {
-  background-color: var(--accent-text-color);
-}
-.modal-chek:checked + .modal-form-chek .modal-form-icon {
-  display: block;
 }
 
 .modal-button {
@@ -286,9 +290,6 @@ img {
 
 .modal-close {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -392,9 +393,6 @@ img {
 }
 
 .join-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -478,10 +476,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
   text-align: center;
-  justify-content: center;
   letter-spacing: 0.06em;
   color: var(--title-white-color);
   background: #2196F3;
@@ -504,9 +499,6 @@ img {
 }
 .portfolio:hover, .portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio:hover .overlay, .portfolio:focus .overlay {
-  transform: translateY(0);
 }
 
 .portfolio-title {
@@ -580,6 +572,9 @@ img {
   transition: transform var(--transition-func);
   color: var(--title-white-color);
   background: rgba(33, 150, 243, 0.9);
+}
+.portfolio:hover .overlay, .portfolio:focus .overlay {
+  transform: translateY(0);
 }
 
 .team-list-wrapper {
@@ -662,7 +657,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  align-items: center;
   transition: color var(--transition-func);
   color: var(--primary-text-color);
 }
@@ -722,15 +716,12 @@ img {
 
 .item-text {
   position: absolute;
-  display: flex;
   bottom: 0;
   width: 370px;
   height: 70px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 0.9;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-white-color);
   background: rgba(47, 48, 58, 0.8);
@@ -751,9 +742,6 @@ img {
 }
 
 .icon-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 120px;
   background: var(--button-text-color);
   border-radius: 4px;
@@ -774,13 +762,10 @@ img {
 }
 
 .border-clients {
-  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid var(--clients-border-color);
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
   fill: var(--clients-border-color);
   transition: fill var(--transition-func), border-color var(--transition-func);
 }
@@ -832,9 +817,6 @@ img {
 }
 
 .social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   background-color: var(--title-white-color);
@@ -844,9 +826,6 @@ img {
 .social-link:hover, .social-link:focus {
   background-color: var(--accent-text-color);
 }
-.social-link:hover .insta, .social-link:focus .insta {
-  fill: var(--title-white-color);
-}
 
 .insta {
   display: flex;
@@ -854,4 +833,7 @@ img {
   height: 20px;
   fill: var(--clients-border-color);
   transition: fill var(--transition-func);
+}
+.social-link:hover .insta, .social-link:focus .insta {
+  fill: var(--title-white-color);
 }/*# sourceMappingURL=main.css.map */

@@ -13,9 +13,7 @@
 
 .modal-close {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     top: 8px;
     right: 8px;
     width: 30px;

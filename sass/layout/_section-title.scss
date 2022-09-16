@@ -18,15 +18,13 @@
 
 .item-text {
     position: absolute;
-    display: flex;
+    @extend %align;
     bottom: 0;
     width: 370px;
     height: 70px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 0.9;
-    align-items: center;
-    justify-content: center;
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-white-color);
     background: rgba(47, 48, 58, 0.8);
@@ -47,9 +45,7 @@
 }
 
 .icon-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     height: 120px;
     background: var(--button-text-color);
     border-radius: 4px;

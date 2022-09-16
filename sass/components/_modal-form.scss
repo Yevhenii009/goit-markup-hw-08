@@ -116,9 +116,7 @@
 }
 
 .modal-field-chek {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     margin-bottom: 30px;
 }
 
