@@ -1,5 +1,5 @@
-.site-nav .link,
-.site-nav_current {
+.main-nav__list .link,
+.main-nav_current {
     color: var(--title-text-color);
     @include font (500, 14px, 1.14, 0.02em);
     text-decoration: none;
@@ -8,7 +8,7 @@
     transition: color var(--transition-func)
 }
 
-.site-nav_current::after {
+.main-nav_current::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -18,16 +18,16 @@
     background-color: var(--accent-text-color)
 }
 
-.site-nav__item {
+.main-nav__item {
     position: relative;
 }
 
-.site-nav {
+.main-nav__list {
     display: flex;
     margin-left: 93px;
     padding-left: 0;
 
-        & .site-nav__item:not(:last-child) {
+        & .main-nav__item:not(:last-child) {
             margin-right: 50px;
         }
 
@@ -36,7 +36,7 @@
             color: var(--hover-color);
         }
 
-        & .site-nav_current {
+        & .main-nav_current {
             color: var(--accent-text-color);
             display: flex;
         }
@@ -47,12 +47,12 @@
     align-items: center;
 }
 
-.contacts {
+.contacts-list {
     display: flex;
     padding-left: 0;
     margin-left: auto;
 
-        & .contacts__item:not(:last-child) {
+        & .contacts-list__item:not(:last-child) {
             margin-right: 50px;
         }
 }

@@ -1,12 +1,11 @@
-.features-section__text {
+.features__subtitle {
     color: var(--title-text-color);
     @include font (700, 14px, 1.14, 0.03em);
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.features-section__title,
-.features-section__title {
+.features__title {
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
@@ -30,17 +29,17 @@
     position: relative;
 }
 
-.features-section {
+.features {
     padding-bottom: 0;
 }
 
-.features-section__lists {
+.features__lists {
     display: flex;
     gap: 30px;
     padding-left: 0;
 }
 
-.features-section__block {
+.features__block {
     @extend %align;
     height: 120px;
     background: var(--button-text-color);
