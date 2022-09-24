@@ -13,7 +13,7 @@
 <body>
     <!--Шапка сайта-->
     <header class="header">
-        <div class="container header-container">
+        <div class="container header__container">
       <nav class="main-nav">
         <a href="./index.html" class="logo">Web<span>Studio</span></a>
         <ul class="main-nav__list list">
@@ -36,18 +36,71 @@
                 </svg>
                 +38 096 111 11 11</a></li>
         </ul>
+        <button type="button" class="open-mobile-menu"data-menu-open>
+            <svg class="open-mobile-menu__icon">
+                <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+        </div>
+                <div class="mobile-menu"data-menu>
+                    <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close"data-menu-close>
+                    <svg class="mobile-menu__icon">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__link">
+                        <a href="" class="mobile-menu_current link">Студія</a>
+                    </li>
+                    <li class="mobile-menu__link">
+                        <a href="" class="mobile-menu__irrelevant link">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu__link">
+                        <a href="" class="mobile-menu__irrelevant link">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+            <ul class="mobile-menu__contacts list">
+                <li class="mobile-menu__item">
+                    <a href="tel:+380961111111" class="mobile-menu__tel link">
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu__mail link">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            </div>
+            <div class="container">
+                <ul class="mobile-menu__join list">
+                    <li class="mobile-menu__lists">
+                        <a href="" class="mobile-menu__join-list link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__lists">
+                        <a href="" class="mobile-menu__join-list link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__lists">
+                        <a href="" class="mobile-menu__join-list link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__lists">
+                        <a href="" class="mobile-menu__join-list link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="section hero">
         <div class="container">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button data-modal-open type="button" class="button primary">Замовити послугу</button>
         
         </div>
-      </section>
+      </section> -->
     <!--Наші особливості-->
-    <section class="section features">
+    <!-- <section class="section features">
         <div class="container">
         <h2 class="features__title visually-hidden">Наші особливості</h2>
         <ul class="features__lists list">
@@ -85,9 +138,9 @@
             </li>
         </ul>
         </div>
-    </section>
+    </section> -->
     <!--Чим ми займаємося-->
-    <section class="section">
+    <!-- <section class="section">
         <div class="container">
         <h2 class="features__title">Чим ми займаємося</h2>
         <ul class="list specialization">
@@ -111,9 +164,9 @@
             </li>
         </ul>
         </div>
-    </section>
+    </section> -->
     <!--Наша команда-->
-    <section class="section bgcolor">
+    <!-- <section class="section bgcolor">
         <div class="container">
         <h2 class="features__title">Наша команда</h2>
         <ul class="employees list">
@@ -227,9 +280,9 @@
             </li>
         </ul>
         </div>
-    </section>
+    </section> -->
     <!-- Постійні клієнти -->
-    <section class="section">
+    <!-- <section class="section">
         <div class="container">
             <h2 class="features__title">Постійні клієнти</h2>
             <ul class="clients list">
@@ -278,9 +331,9 @@
             </ul>
         </div>
     </section>
-    </main>
+    </main> -->
     <!--Футер-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container address-container">
             <div class="address-container__address-wruper">
         <a href="./index.html" class="logo logo_theme_light">Web<span>Studio</span></a>
@@ -391,6 +444,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>

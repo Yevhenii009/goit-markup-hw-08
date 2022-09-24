@@ -6,6 +6,7 @@
 @import './base/common';
 @import './base/reset';
 
+@import './components/mobile-menu';
 @import './components/section';
 @import './components/container';
 @import './components/logo';
@@ -19,7 +20,7 @@
 @import './components/portfolio';
 
 @import './layout/header';
-@import './layout/site-nav';
+@import './layout/main-nav';
 @import './layout/contacts';
 @import './layout/hero';
 @import './layout/section-title';
