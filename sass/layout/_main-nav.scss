@@ -1,10 +1,21 @@
-.main-nav__list {
-    display: none;
-}
 
-.contacts-list {
-    display: none;
-}
+@media screen and (max-width: 767px) {
+    .main-nav__list {
+        display: none;
+    }
+    
+    .contacts-list {
+        display: none;
+    }
+}    
+
+// .main-nav__list {
+//     display: none;
+// }
+
+// .contacts-list {
+//     display: none;
+// }
 
 @media screen and (min-width: 768px) {
 .main-nav {
@@ -14,7 +25,7 @@
 
 .main-nav__list {
     display: flex;
-    margin-left: 93px;
+    margin-left: 87px;
     padding-left: 0;
     
         & .main-nav__item:not(:last-child) {
@@ -60,8 +71,11 @@
 }
 }
 
-
-
+@media screen and (min-width: 1200px) {
+    .main-nav__list {
+        margin-left: 92px;
+    }
+}
 
 
 

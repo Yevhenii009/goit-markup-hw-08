@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px) {
-.contacts-list {
+    .contacts-list {
     display: block;
     padding-left: 0;
     margin-left: auto;
@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 10px;
-        @include font (500, 14px, 1.14, 0.02em);
+        @include font (500, 12px, 1.17, 0.02em);
         text-decoration: none;
         transition: color var(--transition-func);
         color: var(--primary-text-color);
@@ -23,7 +23,16 @@
         fill: currentColor;
     }
 }
+}
 
+@media screen and (min-width: 1200px) {
+    .contacts-list {
+        display: flex;
+    .contacts-list__link {
+        @include font (500, 14px, 1.14, 0.02em);
+        margin-right: 30px;
+    }    
+}
 }
 // .contacts-list__link {
 //     display: flex;

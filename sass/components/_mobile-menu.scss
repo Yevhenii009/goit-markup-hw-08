@@ -1,3 +1,4 @@
+@media screen and (max-width: 767px) {
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -175,3 +176,10 @@
 //     border: 1px solid rgba(33, 33, 33, 0.2);
 //     transform: rotate(90deg);
 // }
+}
+
+@media screen and (min-width: 768px) {
+ .mobile-menu {
+    display: none;
+}  
+}
