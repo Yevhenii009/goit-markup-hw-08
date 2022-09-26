@@ -9,6 +9,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity var(--transition-func), visibility var(--transition-func);
 }
 
 .mobile-menu.is-open {
@@ -42,11 +43,18 @@
     border: none;
     line-height: 0;
     padding: 0;
+    
 }
 
 .mobile-menu__icon {
     width: 40px;
     height: 40px;
+    transition: color var(--transition-func);
+    
+        &:hover,
+        &:focus {
+            fill: var(--accent-text-color);
+    }
 }
 
 .mobile-menu__list {
@@ -61,6 +69,7 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
+    transition: color var(--transition-func);
     
 
     &:hover,
@@ -75,6 +84,7 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    transition: color var(--transition-func);
     
         &:hover,
         &:focus {
@@ -85,6 +95,7 @@
 .mobile-menu__tel,
 .mobile-menu__mail,
 .mobile-menu__join-list {
+    transition: color var(--transition-func);
     &:hover,
     &:focus {
         color: var(--accent-text-color);

@@ -1,3 +1,30 @@
+@media screen and (min-width: 768px) {
+.contacts-list {
+    display: block;
+    padding-left: 0;
+    margin-left: auto;
+
+    .contacts-list__link {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        @include font (500, 14px, 1.14, 0.02em);
+        text-decoration: none;
+        transition: color var(--transition-func);
+        color: var(--primary-text-color);
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-text-color);
+            }
+    }
+    .contacts-list__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}
+
+}
 // .contacts-list__link {
 //     display: flex;
 //     align-items: center;
