@@ -1,44 +1,44 @@
-.mailbox__text {
-    display: flex;
-    margin-bottom: 20px;
-    @include font (700, 14px, 1.14, 0.03em);
-    text-transform: uppercase;
-    color: var(--title-white-color);
-}
+// .mailbox__text {
+//     display: flex;
+//     margin-bottom: 20px;
+//     @include font (700, 14px, 1.14, 0.03em);
+//     text-transform: uppercase;
+//     color: var(--title-white-color);
+// }
 
-.mailbox {
-    display: flex;
-}
+// .mailbox {
+//     display: flex;
+// }
 
-.mailbox-form {
-    display: flex;
-    align-items: end;
-}
+// .mailbox-form {
+//     display: flex;
+//     align-items: end;
+// }
 
-.mailbox__input {
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
-    padding-left: 12px;
-    color: var(--title-white-color);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background: none;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    transition: border-color var(--transition-func);
+// .mailbox__input {
+//     width: 358px;
+//     height: 50px;
+//     margin-right: 12px;
+//     padding-left: 12px;
+//     color: var(--title-white-color);
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     border-radius: 4px;
+//     background: none;
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     transition: border-color var(--transition-func);
 
-        &:hover,
-        &:focus {
-            border-color: var(--accent-text-color);
-            outline: none;
-        }
-        &::placeholder {
-           font-size: 16px;
-           line-height: 1.2;
-           color: rgba(255, 255, 255, 0.6);
+//         &:hover,
+//         &:focus {
+//             border-color: var(--accent-text-color);
+//             outline: none;
+//         }
+//         &::placeholder {
+//            font-size: 16px;
+//            line-height: 1.2;
+//            color: rgba(255, 255, 255, 0.6);
             
-        }
-}
+//         }
+// }
 
 
 .mailbox-button {

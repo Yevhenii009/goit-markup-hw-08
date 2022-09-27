@@ -1,21 +1,21 @@
-.clients {
-    display: flex;
-    gap: 30px;
-    padding-left: 0;
-}
+// .clients {
+//     display: flex;
+//     gap: 30px;
+//     padding-left: 0;
+// }
 
-.clients__card {
-    @extend %align;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--clients-border-color);
-    border-radius: 4px;
-    fill: var(--clients-border-color);
-    transition: fill var(--transition-func), border-color var(--transition-func);
+// .clients__card {
+//     @extend %align;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid var(--clients-border-color);
+//     border-radius: 4px;
+//     fill: var(--clients-border-color);
+//     transition: fill var(--transition-func), border-color var(--transition-func);
 
-        &:hover,
-        &:focus {
-            fill: var(--accent-text-color);
-            border-color: var(--accent-text-color);
-        }
-}
+//         &:hover,
+//         &:focus {
+//             fill: var(--accent-text-color);
+//             border-color: var(--accent-text-color);
+//         }
+// }
