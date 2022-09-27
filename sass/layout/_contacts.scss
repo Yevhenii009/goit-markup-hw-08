@@ -30,8 +30,12 @@
         display: flex;
     .contacts-list__link {
         @include font (500, 14px, 1.14, 0.02em);
+        margin-bottom: 0;
+    }
+    .contacts-list__item:not(:last-child) {
         margin-right: 30px;
-    }    
+        
+    }
 }
 }
 // .contacts-list__link {
