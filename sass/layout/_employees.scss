@@ -36,7 +36,7 @@
         color: var(--title-text-color);
         font-size: 36px;
         line-height: 1.17;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         text-align: center;
     }
     .links {
@@ -101,9 +101,13 @@
         flex-basis: calc((100% - 90px) / 4);
         
     }
-         .employees__card:nth-last-child(n) {
-             margin-bottom: 0;
-         }
+    .employees__card:nth-last-child(n) {
+        margin-bottom: 0;
+    }
+    .features__title-maine {
+        @include font (700, 36px, 1.17, 0.03em);
+        margin-bottom: 50px;
+    }
 }
 
 

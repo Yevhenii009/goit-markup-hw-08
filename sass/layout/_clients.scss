@@ -1,3 +1,57 @@
+@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+
+    .clients {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-left: 0;
+    }
+
+    .client__box {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    .clients__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92px;
+        border: 1px solid var(--clients-border-color);
+        border-radius: 4px;
+        fill: var(--clients-border-color);
+        transition: fill var(--transition-func), border-color var(--transition-func);
+
+            &:hover,
+            &:focus {
+                fill: var(--accent-text-color);
+                border-color: var(--accent-text-color);
+            }
+    }
+    .clients__title {
+        color: var(--title-text-color);
+        @include font (700, 28px, 1.18, 0.03em);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .client__box {
+        flex-basis: calc((100% - 60px) / 3);
+    }   
+}
+
+@media screen and (min-width: 1200px) {
+    .clients {
+        flex-wrap: nowrap;
+    }
+
+    .clients__title {
+        @include font (700, 36px, 1.17, 0.03em);
+        margin-bottom: 50px;
+    }
+}
+
 // .clients {
 //     display: flex;
 //     gap: 30px;
@@ -5,7 +59,9 @@
 // }
 
 // .clients__card {
-//     @extend %align;
+//     display: flex;
+    //  justify-content: center;
+    //  align-items: center;
 //     width: 170px;
 //     height: 92px;
 //     border: 1px solid var(--clients-border-color);
