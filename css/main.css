@@ -125,6 +125,7 @@ img {
   .mobile-menu__list {
     padding-top: 48px;
     padding-bottom: 302px;
+    padding-left: 25px;
   }
   .mobile-menu_current {
     font-weight: 500;
@@ -147,6 +148,9 @@ img {
   }
   .mobile-menu__irrelevant:hover, .mobile-menu__irrelevant:focus {
     color: var(--accent-text-color);
+  }
+  .mobile-menu__contacts {
+    padding-left: 25px;
   }
   .mobile-menu__tel,
 .mobile-menu__mail,
@@ -182,6 +186,7 @@ img {
   }
   .mobile-menu__join {
     display: flex;
+    padding-left: 25px;
   }
   .mobile-menu__join-list {
     display: inline-block;
