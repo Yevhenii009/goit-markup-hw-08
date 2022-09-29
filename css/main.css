@@ -186,13 +186,14 @@ img {
   .mobile-menu__join-list {
     display: inline-block;
     margin-top: 64px;
+    margin-bottom: 48px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
   }
-  .mobile-menu__join-list::after {
+  .mobile-menu__lists:not(:last-child)::after {
     content: "";
     width: 22px;
     margin-left: 5px;
