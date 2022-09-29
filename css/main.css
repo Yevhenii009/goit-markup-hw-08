@@ -263,6 +263,57 @@ img {
   color: var(--title-white-color);
 }
 
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms ease, visability 250ms ease;
+}
+
+.backdrop__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--title-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.backdrop__modal-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  transition: fill var(--transition-func);
+}
+.backdrop__modal-close:focus, .backdrop__modal-close:hover {
+  fill: var(--accent-text-color);
+}
+
 .button {
   background-color: var(--accent-text-color);
   color: var(--title-text-color);
@@ -439,6 +490,7 @@ img {
     width: 358px;
     height: 50px;
     margin-bottom: 20px;
+    padding-left: 16px;
     color: var(--title-white-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -500,6 +552,134 @@ img {
   .mailbox__input {
     margin-bottom: 0;
     margin-right: 12px;
+  }
+}
+@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+  .portfolio {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .portfolio__card {
+    width: 100%;
+    border: 1px solid var(--border-cfrd-color);
+  }
+  .portfolio__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+    transition: box-shadow var(--transition-func);
+  }
+  .portfolio__link:hover, .portfolio__link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .portfolio__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    text-align: start;
+  }
+  .portfolio__text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-align: start;
+  }
+  .portfolio__box {
+    padding: 20px 24px;
+    margin-bottom: auto;
+    flex-grow: 1;
+  }
+  .portfolio__overlay {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    padding-left: 24px;
+    align-items: center;
+    overflow-y: auto;
+    transform: translateY(101%);
+    transition: transform var(--transition-func);
+    color: var(--title-white-color);
+    background: rgba(33, 150, 243, 0.9);
+  }
+  .portfolio__link:hover .portfolio__overlay, .portfolio__link:focus .portfolio__overlay {
+    transform: translateY(0);
+  }
+  .portfolio__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .buttons_type_portfolio {
+    color: var(--title-white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    padding: 6px 25px;
+  }
+  .buttons_type_portfolio:hover, .buttons_type_portfolio:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: var(--accent-text-color);
+  }
+  .buttons {
+    display: flex;
+    margin-bottom: 37px;
+    padding-left: 0;
+    gap: 8px;
+    width: 430px;
+  }
+  .buttons:nth-child(n+2) {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__card {
+    margin-bottom: 0;
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+  .portfolio__card {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .buttons {
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    gap: 30px;
+  }
+  .portfolio__card {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .portfolio__card:nth-last-child(n) {
+    margin-bottom: 0;
+  }
+  .buttons {
+    margin-bottom: 48px;
   }
 }
 .header__container {
