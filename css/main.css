@@ -93,7 +93,11 @@ img {
   }
   .mobile-menu__container {
     position: relative;
-    padding: 0;
+    padding: 48px 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .open-mobile-menu {
     line-height: 0;
@@ -123,9 +127,8 @@ img {
     fill: var(--accent-text-color);
   }
   .mobile-menu__list {
-    padding-top: 48px;
-    padding-bottom: 302px;
-    padding-left: 25px;
+    display: inline-block;
+    padding: 48px 40px;
   }
   .mobile-menu_current {
     font-weight: 500;
@@ -186,11 +189,18 @@ img {
   }
   .mobile-menu__join {
     display: flex;
-    padding-left: 25px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 32px;
+    flex-direction: row;
+  }
+  .mobile-menu__lists:not(:last-child) {
+    padding-right: 10px;
+    height: 22px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   .mobile-menu__join-list {
-    display: inline-block;
-    margin-top: 64px;
+    display: block;
     margin-bottom: 48px;
     font-weight: 500;
     font-size: 18px;
@@ -198,15 +208,19 @@ img {
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
   }
-  .mobile-menu__lists:not(:last-child)::after {
-    content: "";
-    width: 22px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu__mail,
+.mobile-menu__tel,
+.mobile-menu_current,
+.mobile-menu__irrelevant {
+    font-size: 7.01vw;
   }
 }
+.mobile-menu__join-list {
+  font-size: 1.8vh;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -269,6 +283,15 @@ img {
   color: var(--title-white-color);
 }
 
+.backdrop__modal {
+  position: absolute;
+  padding: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--title-white-color);
+}
+
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -285,10 +308,11 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+  transform: scale(1);
   transition: opacity 250ms ease, visability 250ms ease;
 }
 
-@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+@media screen and (max-width: 480px), screen and (min-width: 280px) {
   .features-section__icon {
     transition: fill var(--transition-func);
   }
@@ -296,7 +320,7 @@ img {
     fill: var(--accent-text-color);
   }
   .modal-form__message {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -319,6 +343,7 @@ img {
     color: rgba(117, 117, 117, 0.5);
   }
   .modal-title {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -326,15 +351,16 @@ img {
     text-align: center;
     margin-bottom: 12px;
     color: var(--title-text-color);
+    width: 100%;
   }
   .modal-form {
     display: flex;
     flex-direction: column;
   }
   .modal-form__inpute {
+    display: block;
     width: 100%;
-    height: 40px;
-    padding-left: 42px;
+    padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-func);
@@ -448,7 +474,6 @@ img {
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%);
-  width: 450px;
   background-color: var(--title-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -473,6 +498,11 @@ img {
   fill: var(--accent-text-color);
 }
 
+@media screen and (min-width: 480px) {
+  .backdrop__modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .backdrop__modal {
     width: 528px;
@@ -519,7 +549,7 @@ img {
   background-color: var(--accent-text-color);
 }
 
-@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+@media screen and (max-width: 480px), screen and (min-width: 320px) {
   .footer {
     background-color: var(--secondary-bg-color);
     padding-top: 60px;
@@ -580,7 +610,7 @@ img {
     margin-bottom: 9px;
   }
 }
-@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+@media screen and (max-width: 480px), screen and (min-width: 320px) {
   .join {
     display: flex;
     justify-content: center;
@@ -634,7 +664,7 @@ img {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+@media screen and (max-width: 480px), screen and (min-width: 320px) {
   .mailbox-form {
     display: block;
     align-items: center;
@@ -651,7 +681,7 @@ img {
     color: var(--title-white-color);
   }
   .mailbox__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     margin-bottom: 20px;
     padding-left: 16px;
@@ -703,6 +733,9 @@ img {
   .mailbox__text {
     margin-top: 60px;
   }
+  .mailbox__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mailbox-form {
@@ -714,11 +747,12 @@ img {
     margin-top: 0;
   }
   .mailbox__input {
+    width: 358px;
     margin-bottom: 0;
     margin-right: 12px;
   }
 }
-@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+@media screen and (max-width: 480px), screen and (min-width: 280px) {
   .portfolio {
     display: block;
     width: 100%;
@@ -807,7 +841,7 @@ img {
     margin-bottom: 37px;
     padding-left: 0;
     gap: 8px;
-    width: 430px;
+    width: 330px;
   }
   .buttons:nth-child(n+2) {
     flex-wrap: wrap;
@@ -850,11 +884,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
 }
 
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  background-color: var(--title-white-color);
+  border-bottom: 1px solid var(--border-heder-colod);
 }
 
 @media screen and (min-width: 1200px) {
@@ -905,7 +942,7 @@ img {
   .main-nav_current::after {
     content: "";
     position: absolute;
-    bottom: -16px;
+    bottom: -17px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -1073,7 +1110,7 @@ img {
   padding-left: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .features__card:not(:first-child) {
     margin-top: 30px;
   }
@@ -1131,7 +1168,7 @@ img {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+@media screen and (max-width: 480px), screen and (min-width: 320px) {
   .clients {
     display: flex;
     flex-wrap: wrap;
@@ -1182,7 +1219,7 @@ img {
     margin-bottom: 50px;
   }
 }
-@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+@media screen and (max-width: 480px), screen and (min-width: 320px) {
   .employees {
     display: block;
     width: 100%;

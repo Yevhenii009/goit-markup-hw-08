@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px), screen and (max-width: 1600px) {
+@media screen and (max-width: 480px), screen and (min-width: 280px) {
     .portfolio {
         display: block;
         width: 100%;
@@ -93,7 +93,7 @@
             margin-bottom: 37px;
             padding-left: 0;
             gap: 8px;
-            width: 430px;
+            width: 330px;
         }
         .buttons:nth-child(n + 2) {
             flex-wrap: wrap;

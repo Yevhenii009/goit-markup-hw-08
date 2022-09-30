@@ -1,4 +1,11 @@
-
+.backdrop__modal {
+position: absolute;
+padding: 40px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+background-color: var(--title-white-color);
+}
 .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -15,10 +22,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     visibility: visible;
+    transform: scale(1);
     transition: opacity 250ms ease, visability 250ms ease;
 }
 
-// .backdrop__modal {
-//     width: 450px;
-//         height: 609px;
-// }
