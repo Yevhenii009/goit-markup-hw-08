@@ -93,9 +93,9 @@
             margin-bottom: 37px;
             padding-left: 0;
             gap: 8px;
-            width: 320px;
+            // width: 280px;
         }
-        .buttons:nth-child(n + 2) {
+        .buttons:nth-child(n - 2) {
             flex-wrap: wrap;
         }
 }
